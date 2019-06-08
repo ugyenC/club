@@ -14,6 +14,7 @@
   <strong>By</strong>
   <%= @post.user.fname %>
 </p>
+<%= render 'layouts/start' %>
 
 <% if current_user && current_user.admin %>
   <%= link_to 'Edit', edit_post_path(@post) %> |
